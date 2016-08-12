@@ -4,9 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="js/app.js" ></script>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Oswald:300|VT323" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
   <title>Simon</title>
 </head>
 <body>
-
+  <div class="container">
+    <div class="game">
+      <div class="butn row green" value="1"></div><div class="butn row red" value="2"></div>
+      <div class="butn row yellow" value="3"></div><div class="butn row blue" value="4"></div>
+      <div class="menu">
+        <h1 class="simon">Simon</h1>
+        <div class="disp row"><h1>88</h1><h3>Count</h3></div>
+        <div class="menu-btn row">
+          <div class="btn startbtn"></div>
+          <h3>Start</h3>
+        </div>
+        <div class="menu-btn row">
+          <div class="btn strictbtn"></div>
+          <h3>Strict</h3>
+          <div class="led"></div>
+        </div>
+        <div class="onOffMenu">
+          <h3 class="row off">OFF</h3>
+          <label class="switchSlide">
+            <input type="checkbox" id="onOff">
+            <div class="slider"></div>
+          </label>
+          <h3 class="row on">ON</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio class="1" preload="none">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg" loop="true">
+  </audio>
+  <audio class="2" preload="none">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+  </audio>
+  <audio class="3" preload="none">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+  </audio>
+  <audio class="4" preload="none">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>

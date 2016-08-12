@@ -1,0 +1,180 @@
+body {
+  background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/wood_pattern.png");
+}
+.container {
+  margin-top: 20%;
+}
+.game {
+  height: 460px;
+  width: 460px;
+  position: relative;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #343436;
+  padding-left: 14px;
+  padding-top: 14px;
+  box-shadow: 3px 3px 15px #000;
+}
+.row {
+  display: inline-block;
+}
+.butn {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 11px solid #343436;
+}
+.green {
+  background-color: #00a74a;
+  border-radius: 100% 0% 0% 0%;
+}
+.green.light {
+  background-color: #00e667;
+}
+.red {
+  background-color: #9f0f17;
+  border-radius: 0% 100% 0% 0%;
+}
+.red.light {
+  background-color: #d2141d;
+}
+.yellow {
+  background-color: #cca707;
+  border-radius: 0% 0% 0% 100%;
+}
+.yellow.light {
+  background-color: #f7d022;
+}
+.blue {
+  background-color: #094a8f;
+  border-radius: 0% 0% 100% 0%;
+}
+.blue.light {
+  background-color: #0c63c0;
+}
+.menu {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  height: 200px;
+  width: 200px;
+  border: 11px solid #343436;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  margin-top: -340px;
+  margin-left: 113px;
+}
+.menu h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-left: 35px;
+}
+.menu h3 {
+  margin-top: 0px;
+}
+.menu .disp {
+  line-height: 40px;
+  width: 50px;
+  margin-left: 35px;
+}
+.menu .disp h1 {
+  font-family: 'VT323', monospace;
+  font-size: 45px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin: 0px;
+  color: #4d0019;
+  padding-left: 6px;
+  padding-bottom: 3px;
+}
+.menu .dispOn h1 {
+  color: #b30039;
+}
+.menu .disp h3 {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.menu-btn {
+  margin-left: 10px;
+}
+.menu .btn {
+  margin-bottom: 8px;
+  height: 20px;
+  width: 20px;
+  border: 3px solid #343436;
+  border-radius: 100%;
+  background-color: red;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+.menu .btn:active {
+  height: 19px;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+.led {
+  height: 5px;
+  width: 5px;
+  background-color: #1a1a1a;
+  border-radius: 100%;
+  border: 2px solid black;
+  position: absolute;
+  top: 85px;
+  left: 144px;
+}
+.ledOn {
+  background-color: #ffff00;
+}
+.onOffMenu {
+  margin-top: -15px;
+  padding-left: 57px;
+}
+/* The switch - the box around the slider */
+.switchSlide {
+  margin-bottom: -5px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+/* Hide default HTML checkbox */
+.switchSlide input {
+  display:none;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
